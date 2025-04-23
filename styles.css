@@ -1,0 +1,14 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:cadetblue;
+}
+header{
+    text-align: center;
+    font-size: large;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 10px 10px;
+}
