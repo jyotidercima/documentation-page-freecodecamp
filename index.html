@@ -1,74 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Machine Learning with AI - Documentation</title>
   <link rel="stylesheet" href="styles.css">
-  
+
 </head>
+
 <body>
   <nav id="navbar">
-    <header><h1>Documentation for Machine learning with AI</h1></header>
-    <a class="nav-link" href="#intro">Introduction</a>
-    <a class="nav-link" href="#ml-vs-ai">ML vs AI</a>
-    <a class="nav-link" href="#types">Types of ML</a>
-    <a class="nav-link" href="#workflow">Workflow</a>
-    <a class="nav-link" href="#tools">Tools</a>
-    <a class="nav-link" href="#code">Sample Code</a>
-    <a class="nav-link" href="#applications">Applications</a>
-    <a class="nav-link" href="#resources">Resources</a>
-  </nav>
-<main class="main-doc">
-  <section id="intro" class="main-section">
-    <h2>Introduction</h2>
-    <p>Machine Learning (ML) is a subset of Artificial Intelligence (AI) that allows systems to learn and improve from experience without being explicitly programmed.</p>
-  </section>
-
-  <section id="ml-vs-ai" class="main-section">
-    <h2>Machine Learning vs Artificial Intelligence</h2>
+    <header id="header">
+      <h1>Machine learning with AI - Documentation</h1>
+    </header>
     <ul>
-      <li>AI is the broader concept of machines being able to carry out tasks in a smart way.</li>
-      <li>ML is an application of AI that enables systems to learn from data.</li>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#Machine_Learning_vs_Artificial_Intelligence">Machine Learning vs Artificial Intelligence</a></li>
+      <li><a class="nav-link" href="#types_of_Machine_Learning">Types of Machine Learning</a></li>
+      <li><a class="nav-link" href="#Machine_Learning_Workflow">Machine Learning Workflow</a></li>
+      <li><a class="nav-link" href="#Popular_ML_Tools_&_Libraries">Popular ML Tools & Libraries</a></li>
+      <li><a class="nav-link" href="#Sample_Code">Sample Code</a></li>
+      <li><a class="nav-link" href="#applications_of_Machine_Learning">Applications of Machine Learning</a></li>
+      <li><a class="nav-link" href="#resources">Resources</a></li>
     </ul>
-  </section>
+  </nav>
+  <main id="main-doc">
+    <section id="Introduction" class="main-section">
+      <header>Introduction</header>
+      <p>Machine Learning (ML) is a subset of Artificial Intelligence (AI) that allows systems to learn and improve from
+        experience without being explicitly programmed.</p>
+    </section>
 
-  <section id="types" class="main-section">
-    <h2>Types of Machine Learning</h2>
-    <ul>
+    <section id="Machine_Learning_vs_Artificial_Intelligence" class="main-section">
+      <header>Machine Learning vs Artificial Intelligence</header>
+      <p>Artificial Intelligence (AI) is an umbrella term that encompasses various strategies and techniques to make
+        machines more humanlike, including learning, problem-solving, and pattern recognition.</p>
+      <p>Machine Learning (ML) is a specific branch of AI that focuses on developing algorithms and statistical models
+        to enable computer systems to learn from data without explicit instructions.</p>
+      <!-- <ul>
+        <li>AI is the broader concept of machines being able to carry out tasks in a smart way.</li>
+        <li>ML is an application of AI that enables systems to learn from data.</li>
+      </ul> -->
+    </section>
+
+    <section id="types_of_Machine_Learning" class="main-section">
+      <header>Types of Machine Learning</header>
+      <!-- <ul>
       <li>Supervised Learning</li>
       <li>Unsupervised Learning</li>
       <li>Semi-Supervised Learning</li>
       <li>Reinforcement Learning</li>
-    </ul>
-  </section>
+    </ul> -->
+      <ul>
+        <li>
+          <header>Supervised Learning:</header>
+          <p>This type of machine learning involves training algorithms using labeled data, where the
+            desired output is known. It is highly accurate and uses a feedback mechanism to improve predictions.
+            Examples
+            include linear regression, logistic regression, and support vector machines (SVMs).</p>
+        </li>
+        <li>
+          <header>Unsupervised Learning:</header>
+          <p>In contrast, unsupervised learning algorithms work with unlabeled data to discover
+            underlying patterns or groupings. It is less accurate compared to supervised learning and does not use
+            labeled
+            data or a feedback mechanism.</p>
+        </li>
+        <li>
+          <header>Semi-Supervised Learning:</header>
+          <p>This approach combines supervised and unsupervised learning, using both labeled and
+            unlabeled data for training. It is particularly useful when labeled data is scarce but there is a large
+            amount
+            of unlabeled data available.</p>
+        </li>
+        <li>
+          <header>Reinforcement Learning:</header>
+          <p>This type of learning involves a reward-punishment system where an algorithm learns to
+            perform a series of actions to achieve a goal in an interactive environment. It does not require labeled
+            data
+            and is often used in applications like self-driving cars and gaming.</p>
+        </li>
+      </ul>
+    </section>
 
-  <section id="workflow" class="main-section">
-    <h2>Machine Learning Workflow</h2>
-    <ul>
-      <li>Data Collection</li>
-      <li>Data Preprocessing</li>
-      <li>Model Selection</li>
-      <li>Training</li>
-      <li>Evaluation</li>
-      <li>Deployment</li>
-    </ul>
-  </section>
+    <section id="Machine_Learning_Workflow" class="main-section">
+      <header>Machine Learning Workflow</header>
+      <p>A machine learning (ML) workflow refers to the systematic process of developing, training, evaluating, and
+        deploying machine learning models. It encompasses a series of steps that guide practitioners through the entire
+        lifecycle of a machine learning project, from problem definition to solution deployment.</p><br>
+      <p>The workflow typically includes several key phases:</p>
+      <ul>
+        <li>
+          <header>Data Engineering:</header>
+          <p>Data acquisition and preparation, which involves integrating data from various sources and
+            preparing it for analysis.</p>
+        </li>
+        <li>
+          <header>Model Engineering:</header>
+          <p>Writing and executing machine learning algorithms to obtain a model. This includes model
+            training, evaluation, testing, and packaging.</p>
+        </li>
+        <li>
+          <header>Code Engineering:</header>
+          <p>Integrating the ML model into the final product, which involves model serving and
+            performance monitoring.</p>
+        </li>
+      </ul>
+      <p>Each phase is crucial for ensuring that the final model is accurate, reliable, and delivers value to the
+        organization.</p>
+      <p>Additionally, the workflow may involve hyperparameter tuning, a critical phase where the best settings for the
+        model's hyperparameters are chosen to optimize performance.</p>
+      <p>Understanding and following a structured ML workflow helps improve efficiency, maintain model integrity, and
+        make informed decisions throughout the project lifecycle.</p>
 
-  <section id="tools" class="main-section">
-    <h2>Popular ML Tools & Libraries</h2>
-    <ul>
-      <li>Python</li>
-      <li>Scikit-learn</li>
-      <li>TensorFlow</li>
-      <li>PyTorch</li>
-      <li>Pandas & NumPy</li>
-    </ul>
-  </section>
 
-  <section id="code" class="main-section">
-    <h2>Sample Code</h2>
-    <pre><code>from sklearn.datasets import load_iris
+
+
+
+
+
+
+      <!-- <ul>
+        <li>Data Collection</li>
+        <li>Data Preprocessing</li>
+        <li>Model Selection</li>
+        <li>Training</li>
+        <li>Evaluation</li>
+        <li>Deployment</li>
+      </ul> -->
+    </section>
+
+    <section id="Popular_ML_Tools_&_Libraries" class="main-section">
+      <header>Popular ML Tools & Libraries</header>
+      <ul>
+
+        <head>Popular Machine Learning Tools and Libraries</head>
+        <li>
+          <header>NumPy:</header>
+          <p> A fundamental library for scientific computing in Python, providing support for large, multi-dimensional
+            arrays and matrices, along with a collection of mathematical functions to operate on these arrays. It is
+            widely used for data manipulation and preprocessing in machine learning projects.</p>
+        </li>
+        <li>
+          <header>Pandas:</header>
+          <p> A powerful library for data manipulation and analysis, offering data structures like DataFrames and Series
+            for efficient, structured data handling. Pandas is essential for tasks such as data cleaning,
+            transformation, and exploratory data analysis, and it integrates well with other libraries like NumPy and
+            Matplotlib.</p>
+        </li>
+        <li>
+          <header>Matplotlib:</header>
+          <p> A popular library for data visualization in Python, providing a wide range of functions and classes for
+            creating various types of plots, including line plots, scatter plots, bar plots, and histograms. Matplotlib
+            is highly customizable and is extensively used in machine learning for visualizing data distributions, model
+            performance, and feature importance.</p>
+        </li>
+        <li>
+          <header>Scikit-learn:</header>
+          <p> A comprehensive machine learning library that provides various algorithms and tools for tasks such as
+            classification, regression, clustering, and dimensionality reduction. It offers a consistent API and
+            supports integration with other libraries like NumPy and Pandas, making it a great tool for both beginners
+            and experienced professionals.</p>
+        </li>
+        <li>
+          <header>TensorFlow:</header>
+          <p> An open-source library developed by Google, excelling in dataflow and differentiable programming.
+            TensorFlow is widely used for building and training deep neural networks and is known for its pre-built
+            model library and user-friendly nature. It is popular in both research and production environments.</p>
+        </li>
+        
+        <li>
+          <header>PyTorch:</header>
+          <p> An open-source deep learning library developed by Facebook’s AI research team, offering dynamic
+            computational graphs, automatic differentiation, and GPU acceleration. PyTorch is known for its flexibility
+            and ease of use, making it a preferred choice for deep learning research and development.</p>
+        </li>
+        <li>
+          <header>Keras:</header>
+          <p> A high-level machine learning library built on top of TensorFlow, designed to make it easy to build and
+            train deep learning models. Keras provides a range of layers and models that can be used to build neural
+            networks and other machine learning models, and it is known for its user-friendly API.</p>
+        </li>
+        <li>
+          <header>SciPy:</header>
+          <p> A library used for scientific and technical computing, providing modules for optimization, linear algebra,
+            integration, and statistics. SciPy is often used in conjunction with NumPy and is essential for tasks
+            requiring advanced mathematical operations.</p>
+        </li>
+        
+        <li>
+          <header>Shogun:</header>
+          <p> An open-source machine learning library that supports a combination of ML algorithms, data structures, and
+            tools for prototyping data pipelines and building models. It is designed to handle large data sets and
+            offers interfaces for multiple programming languages, including Python, Java, Ruby, C#, R, Lua, and others.
+          </p>
+        </li>
+        <li>
+          <header>Hugging Face:</header>
+          <p>Known as the GitHub of machine learning, Hugging Face provides a platform for building, training, and
+            deploying ML models. It offers a wide range of models, data sets, and demos, and supports various domains,
+            including natural language processing, computer vision, and audio processing.</p>
+        </li>
+        <li>
+          <header>ML.NET:</header>
+          <p> An open-source framework developed by Microsoft, featuring full integration with the .NET ecosystem.
+            ML.NET provides native tools and APIs for building and deploying machine learning models, offering diverse
+            functionality for classification, regression, clustering, and anomaly detection.</p>
+        </li>
+        <li>
+          <header>Anaconda:</header>
+          <p> An open-source platform for data analytics that works with Python and R, allowing developers to use more
+            than 1,500 data science packages. Anaconda is popular for its visualization capabilities and ease of use,
+            making it a valuable tool for data scientists and machine learning practitioners.</p>
+        </li>
+      </ul>
+      <p>These tools and libraries are essential for various stages of machine learning projects, from data
+        preprocessing and model building to evaluation and deployment. Each has its unique strengths and is suited for
+        different tasks, making them indispensable in the machine learning ecosystem.
+      </p>
+      <pre>
+        <code>
+#Here is a TensorFlow code sample for a simple Convolutional Neural Network (CNN)to classify CIFAR-10 images:
+
+import tensorflow as tf
+from tensorflow.keras import datasets, layers, models
+import matplotlib.pyplot as plt
+
+# Load and preprocess the CIFAR-10 dataset
+(train_images, train_labels), (test_images, test_labels) = datasets.cifar10.load_data()
+
+# Normalize pixel values to be between 0 and 1
+train_images, test_images = train_images / 255.0, test_images / 255.0
+
+# Define the CNN architecture
+model = models.Sequential()
+model.add(layers.Conv2D(32, (3, 3), activation='relu', input_shape=(32, 32, 3)))
+model.add(layers.MaxPooling2D((2, 2)))
+model.add(layers.Conv2D(64, (3, 3), activation='relu'))
+model.add(layers.MaxPooling2D((2, 2)))
+model.add(layers.Conv2D(64, (3, 3), activation='relu'))
+
+# Add Dense layers on top
+model.add(layers.Flatten())
+model.add(layers.Dense(64, activation='relu'))
+model.add(layers.Dense(10))
+
+# Compile the model
+model.compile(optimizer='adam',
+            loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+            metrics=['accuracy'])
+
+# Train the model
+history = model.fit(train_images, train_labels, epochs=10, 
+                  validation_data=(test_images, test_labels))
+
+# Evaluate the model
+test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=2)
+print('\nTest accuracy:', test_acc)
+        </code>
+      </pre>
+      <pre>
+        <code>
+from scipy import integrate
+from scipy import special
+
+# Define a lambda function to integrate
+a = lambda x: special.exp10(x)
+
+# Use scipy.integrate.quad to integrate the function 'a' from 0 to 1
+b = integrate.quad(a, 0, 1)
+
+# Print the result
+print(b)
+        </code>
+      </pre>
+      <!-- <ul>
+        <li>Python</li>
+        <li>Scikit-learn</li>
+        <li>TensorFlow</li>
+        <li>PyTorch</li>
+        <li>Pandas & NumPy</li>
+      </ul> -->
+    </section>
+
+    <section id="Sample_Code" class="main-section">
+      <header>Sample Code</header>
+      <pre><code>
+from sklearn.datasets import load_iris
 from sklearn.tree import DecisionTreeClassifier
 
 # Load dataset
@@ -81,28 +300,130 @@ model.fit(X, y)
 
 # Predict
 print(model.predict([[5.1, 3.5, 1.4, 0.2]]))</code></pre>
-  </section>
 
-  <section id="applications" class="main-section">
-    <h2>Applications of Machine Learning</h2>
-    <ul>
-      <li>Speech Recognition</li>
-      <li>Image and Video Analysis</li>
-      <li>Recommendation Systems</li>
-      <li>Fraud Detection</li>
-      <li>Medical Diagnosis</li>
-    </ul>
-  </section>
+<pre>
+  <code>
+# Predicting values:
+# Function for predicting future values:
+    
+def get_regression_predictions(input_features,intercept,slope):
+    predicted_values = input_features*slope + intercept
 
-  <section id="resources" class="main-section">
-    <h2>Further Resources</h2>
-    <ul>
-      <li><a href="https://scikit-learn.org/" target="_blank">Scikit-learn Documentation</a></li>
-      <li><a href="https://www.tensorflow.org/" target="_blank">TensorFlow</a></li>
-      <li><a href="https://pytorch.org/" target="_blank">PyTorch</a></li>
-      <li><a href="https://www.kaggle.com/" target="_blank">Kaggle</a></li>
-    </ul>
-  </section>
-</main>
+    return predicted_values
+  </code>
+</pre>
+
+<pre>
+  <code>
+    # Predicting emission for future car:
+
+    my_engine_size = 3.5
+    
+    estimatd_emission = get_regression_predictions(my_engine_size,regr.intercept_[0],regr.coef_[0][0])
+    print ("Estimated Emission :",estimatd_emission)
+  </code>
+  output : 
+  Estimated Emission : 262.9528329350172
+</pre>
+    </section>
+
+    <section id="applications_of_Machine_Learning" class="main-section">
+      <header>Applications of Machine Learning</header>
+      <p>Machine learning (ML) has a wide range of applications across various industries, enhancing efficiency,
+        accuracy, and decision-making processes. Here are some of the most prominent applications:</p>
+      <ul>
+        <li>
+          <header>mage Recognition:</header>
+          <p>I ML algorithms are trained to recognize and categorize images, which is used in applications like facial
+            recognition, object detection, and medical imaging. Popular platforms like Instagram, Facebook, and TikTok
+            use ML for image recognition to tag users and identify content. </p>
+        </li>
+        <li>
+          <header>Speech Recognition:</header>
+          <p>ML is used to convert spoken language into text, enabling voice-activated assistants like Amazon’s Alexa,
+            Apple’s Siri, and Google Assistant. These systems use techniques like PLP features, Viterbi search, deep
+            neural networks, and the WFST framework. </p>
+        </li>
+        <li>
+          <header>Virtual Personal Assistants:</header>
+          <p>These assistants help users access information via text or voice. They use ML techniques such as speech
+            recognition, speech-to-text conversion, natural language processing, and text-to-speech conversion to
+            understand and respond to user queries. </p>
+        </li>
+        <li>
+          <header>Fraud Detection:</header>
+          <p>ML models are used to detect unusual patterns in financial transactions, helping to prevent fraud. Online
+            payment processors like PayPal use complex ML techniques to discern between legitimate and unlawful
+            transactions. </p>
+        </li>
+        <li>
+          <header>Product Recommendations:</header>
+          <p>E-commerce platforms use ML algorithms to recommend products based on user behavior and preferences. This
+            enhances the shopping experience by suggesting relevant items. </p>
+        </li>
+        <li>
+          <header>Email Spam Filtering:</header>
+          <p>ML algorithms are used to classify incoming emails as spam and direct them to the spam folder. Techniques
+            like Multi-Layer Perceptron and C4.5 Decision Tree Classifier are commonly used. </p>
+        </li>
+        <li>
+          <header>Malware Detection:</header>
+          <p>ML tools identify and defend against new viruses by recognizing coding patterns in malware. </p>
+        </li>
+        <li>
+          <header>Healthcare:</header>
+          <p>ML is used in disease diagnosis, patient monitoring, and therapeutic planning. It helps in forecasting
+            disease progression and extracting medical knowledge for research. </p>
+        </li>
+        <li>
+          <header>Financial Services:</header>
+          <p>ML is used in algorithmic trading, portfolio management, and predicting customer churn. Banks can use
+            classification algorithms to classify customers as ‘churners’ or ‘non-churners’ and improve their services.
+          </p>
+        </li>
+        <li>
+          <header>Retail:</header>
+          <p>ML is used for market basket analysis, which predicts what products customers are likely to buy together.
+            It also helps in analyzing customer reviews and generating predictions. </p>
+        </li>
+        <li>
+          <header>Sentiment Analysis:</header>
+          <p>ML is used to analyze the sentiment of text data, which is useful for campaign monitoring, brand
+            monitoring, and stock market analysis. </p>
+        </li>
+        <li>
+          <header>Self-Driving Cars:</header>
+          <p>ML is a key component in the development of autonomous vehicles, enabling them to make decisions based on
+            real-time data from sensors and cameras. </p>
+        </li>
+        <li>
+          <header>Social Media:</header>
+          <p>ML is used for real-time streaming of sentiments, content moderation, and personalized content
+            recommendations. </p>
+        </li>
+      </ul>
+
+      <p>These applications demonstrate the versatility and impact of machine learning across different sectors, driving
+        innovation and improving processes.</p>
+      <!-- <ul>
+        <li>Speech Recognition</li>
+        <li>Image and Video Analysis</li>
+        <li>Recommendation Systems</li>
+        <li>Fraud Detection</li>
+        <li>Medical Diagnosis</li>
+      </ul> -->
+    </section>
+
+    <section id="resources" class="main-section">
+      <header>Resources</header>
+      <ul>
+        <li><a href="https://scikit-learn.org/" target="_blank">Scikit-learn Documentation</a></li>
+        <li><a href="https://www.tensorflow.org/" target="_blank">TensorFlow</a></li>
+        <li><a href="https://pytorch.org/" target="_blank">PyTorch</a></li>
+        <li><a href="https://www.kaggle.com/" target="_blank">Kaggle</a></li>
+      </ul>
+    </section>
+  </main>
 </body>
+
 </html>
